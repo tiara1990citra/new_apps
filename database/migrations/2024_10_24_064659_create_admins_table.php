@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admins', function (Blueprint $table) {
-            $table->tinyIncrements('id_admin');
+            $table->id();
             $table->string('username');
             $table->string('password');
             $table->enum('role', ['admin', 'kasir']);
