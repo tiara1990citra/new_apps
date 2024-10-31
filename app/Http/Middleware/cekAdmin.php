@@ -15,7 +15,7 @@ class cekAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if($request->user()->role !='dashboardAdmin') return redirect('/login');
+        if($request->user()->role !='\dashboardAdmin.blade.php') return redirect('resources\views\login.php');
         return $next($request);
     }
 }

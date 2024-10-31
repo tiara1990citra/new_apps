@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+
     public function login(){
         return view('login');
     }
@@ -15,9 +16,15 @@ class AdminController extends Controller
             'username' => 'required',
             'password' =>'required',
         ]);
+
+           //cek apakah username dan password sudah benar
+           $karcis =$request->only(['username','password']);
+           if(Auth::guard('satpam_admin')->attempt($karcis)){
+               return redirect('/dashboardAdmin');
+           }
+           return back()->with('pesan','username dan password tidak terdaftar');   
+       }
     }
 
-    public function latihan(Request $request){
-        return $request ->user();
-    }
-}
+
+

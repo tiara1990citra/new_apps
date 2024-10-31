@@ -1,4 +1,12 @@
-* {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Kucing Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -89,3 +97,34 @@ body, html {
 .login-box button:hover {
     background-color: #aaa;
 }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <img src="\image\icons8-cat-footprint-100.png" alt="Paw Icon">
+            </div>
+            <h1>MARKET KUCING</h1>
+        </div>
+        <div class="right-section">
+            <div class="login-box"> 
+</script>
+
+<form action="{{ route('cekLogin') }}" method="POST">
+    @csrf
+    <input type="text" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Login</button>
+</form>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
+
