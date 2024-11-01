@@ -167,26 +167,28 @@ table th {
         <div class="content">
             <div class="form-section">
                 <form>
-                    <label for="id-transaksi">Id pelanggan</label>
+
+                    <label for="id pelanggan">Id pelanggan</label>
                     <input type="text" id="id-pelanggan" name="id-pelanggan">
                     
-                    <label for="id-pelanggan">Telefon</label>
+                    <label for="nama pelanggan">Nama pelanggan</label>
+                    <input type="text" id="nama" name="nama pelanggan">
+                    
+                    <label for="alamat">Alamat</label>
+                    <input type="text" id="alamat" name="alamat">
+                    
+                    <label for="telefon">Telefon</label>
                     <input type="text" id="telefon" name="telefon">
-                    
-                    <label for="tanggal">Total</label>
-                    <input type="text" id="total" name="total">
-                    
-                    <label for="total">Nama pelanggan</label>
-                    <input type="text" id="nama pelanggan" name="nama pelanggan">
 
-                    <label for="total">Alamat</label>
+                    <label for="alamat">Alamat</label>
                     <input type="text" id="alamat" name="alamat">
 
-                    <label for="total">Kembalian</label>
-                    <input type="text" id="kembalian" name="kembalian">
+                    <label for="tanggal">Tanggal</label>
+                    <input type="text" id="tanggal" name="tanggal">
                     
                 </form>
                 <div class="buttons">
+
                     <button type="button">Tambah</button>
                     <button type="button">Simpan</button>
                     <button type="button">Hapus</button>
@@ -202,7 +204,7 @@ table th {
                             <th>Total</th>
                             <th>Nama pelanggan</th>
                             <th>Alamat</th>
-                            <th>Kembalian</th>
+                            <th>Tanggal</th>
                         </tr>
                     </thead>
                     <tbody>
